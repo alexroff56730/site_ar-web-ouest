@@ -1,5 +1,3 @@
-'use strict';
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -17,7 +15,10 @@ var Devis = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Devis.__proto__ || Object.getPrototypeOf(Devis)).call(this, props));
 
         _this.state = {
-            name: ""
+            name: "",
+            Fname: "",
+            siret: "",
+            mail: ""
         };
         return _this;
     }
@@ -31,13 +32,65 @@ var Devis = function (_React$Component) {
                 "div",
                 null,
                 React.createElement(
-                    "label",
-                    null,
-                    "Name:"
-                ),
-                React.createElement("input", { type: "text", onChange: function onChange(e) {
-                        _this2.setState({ name: e.target.value });
-                    } })
+                    "form",
+                    { method: "POST" },
+                    React.createElement(
+                        "div",
+                        { className: "champDevis" },
+                        React.createElement(
+                            "label",
+                            { "for": "Name" },
+                            "Nom:"
+                        ),
+                        React.createElement("input", { type: "text", name: "Name", onChange: function onChange(e) {
+                                _this2.setState({ name: e.target.value });
+                                document.getElementById("test").innerText = e.target.value;
+                            }
+                        })
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "champDevis" },
+                        React.createElement(
+                            "label",
+                            { "for": "Fname" },
+                            "Prenom:"
+                        ),
+                        React.createElement("input", { type: "text", name: "Fname", onChange: function onChange(e) {
+                                _this2.setState({ Fname: e.target.value });
+                                document.getElementById("test").innerHTML = e.target.value;
+                            }
+                        })
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "champDevis" },
+                        React.createElement(
+                            "label",
+                            { "for": "siret" },
+                            "Siret:"
+                        ),
+                        React.createElement("input", { type: "text", name: "siret", onChange: function onChange(e) {
+                                _this2.setState({ siret: e.target.value });
+                                document.getElementById("test").innerHTML = e.target.value;
+                            }
+                        })
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "champDevis" },
+                        React.createElement(
+                            "label",
+                            { "for": "Mail" },
+                            "Mail:"
+                        ),
+                        React.createElement("input", { type: "text", name: "Mail", onChange: function onChange(e) {
+                                _this2.setState({ mail: e.target.value });
+                                document.getElementById("test").innerHTML = e.target.value;
+                            }
+                        })
+                    )
+                )
             );
         }
     }]);
