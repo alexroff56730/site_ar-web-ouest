@@ -18,7 +18,46 @@ var TempDevis = function (_React$Component) {
     _createClass(TempDevis, [{
         key: "render",
         value: function render() {
-            return React.createElement("p", { id: "test" });
+            return React.createElement(
+                "div",
+                { className: "WidthTemp" },
+                React.createElement(
+                    "div",
+                    { className: "HeaderTempDevis bg-primary" },
+                    React.createElement(
+                        "div",
+                        null,
+                        React.createElement(
+                            "p",
+                            null,
+                            "AR-WEB-OUEST"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "Alexandre ROFFIAEN"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "892 736 935 000 24"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "alexandreroffiaen@gmail.com"
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        null,
+                        React.createElement("p", { id: "name" }),
+                        React.createElement("p", { id: "Fname" }),
+                        React.createElement("p", { id: "siret" }),
+                        React.createElement("p", { id: "mail" })
+                    )
+                )
+            );
         }
     }]);
 

@@ -44,7 +44,7 @@ var Devis = function (_React$Component) {
                         ),
                         React.createElement("input", { type: "text", name: "Name", onChange: function onChange(e) {
                                 _this2.setState({ name: e.target.value });
-                                document.getElementById("test").innerText = e.target.value;
+                                document.getElementById("name").innerText = e.target.value;
                             }
                         })
                     ),
@@ -58,7 +58,7 @@ var Devis = function (_React$Component) {
                         ),
                         React.createElement("input", { type: "text", name: "Fname", onChange: function onChange(e) {
                                 _this2.setState({ Fname: e.target.value });
-                                document.getElementById("test").innerHTML = e.target.value;
+                                document.getElementById("Fname").innerHTML = e.target.value;
                             }
                         })
                     ),
@@ -72,7 +72,7 @@ var Devis = function (_React$Component) {
                         ),
                         React.createElement("input", { type: "text", name: "siret", onChange: function onChange(e) {
                                 _this2.setState({ siret: e.target.value });
-                                document.getElementById("test").innerHTML = e.target.value;
+                                document.getElementById("siret").innerHTML = e.target.value;
                             }
                         })
                     ),
@@ -86,7 +86,7 @@ var Devis = function (_React$Component) {
                         ),
                         React.createElement("input", { type: "text", name: "Mail", onChange: function onChange(e) {
                                 _this2.setState({ mail: e.target.value });
-                                document.getElementById("test").innerHTML = e.target.value;
+                                document.getElementById("mail").innerHTML = e.target.value;
                             }
                         })
                     )

@@ -19,7 +19,7 @@ class Devis extends React.Component {
                         <input type="text" name="Name" onChange={
                                 (e) => {
                                     this.setState({name: e.target.value}); 
-                                    document.getElementById("test").innerText=e.target.value;
+                                    document.getElementById("name").innerText=e.target.value;
                                 }
                             } 
                         />
@@ -29,7 +29,7 @@ class Devis extends React.Component {
                         <input type="text" name="Fname" onChange={
                                 (e) => {
                                     this.setState({Fname: e.target.value});
-                                    document.getElementById("test").innerHTML=e.target.value;
+                                    document.getElementById("Fname").innerHTML=e.target.value;
                                 }
                             }
                         />
@@ -39,7 +39,7 @@ class Devis extends React.Component {
                         <input type="text" name="siret" onChange={
                                 (e) => {
                                     this.setState({siret: e.target.value});
-                                    document.getElementById("test").innerHTML=e.target.value;
+                                    document.getElementById("siret").innerHTML=e.target.value;
                                 }
                             }
                         />
@@ -49,7 +49,7 @@ class Devis extends React.Component {
                         <input type="text" name="Mail" onChange={
                                 (e) => {
                                     this.setState({mail: e.target.value});
-                                    document.getElementById("test").innerHTML=e.target.value;
+                                    document.getElementById("mail").innerHTML=e.target.value;
                                 }
                             }
                         />
