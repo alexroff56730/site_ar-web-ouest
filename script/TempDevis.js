@@ -66,6 +66,15 @@ var TempDevis = function (_React$Component) {
                         React.createElement("p", { className: "text-light", id: "Techno" }),
                         React.createElement("p", { className: "text-light", id: "Techprice" })
                     )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "WidthTemp" },
+                    React.createElement(
+                        "div",
+                        { className: "Product bg-dark", id: "MsgZone" },
+                        React.createElement("p", { className: "text-light", id: "MSG" })
+                    )
                 )
             );
         }

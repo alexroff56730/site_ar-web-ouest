@@ -11,11 +11,21 @@
 <body>
     <?php
         include("header.php");
+        require_once("speed-mail/Info.php");
+
+        if(isset($_POST["sub"])) {
+            if(!empty($_POST["Name"]) && !empty($_POST["Fname"]) && !empty($_POST["subject"]) && !empty($_POST["Mail"]) && !empty($_POST["MSG"])) {
+                SpeedMail("Name", "Fname", "subject", "Mail", "MSG");
+                echo "<div class='bg-success text-light' style='width:100%; padding-top: 10px; padding-bottom: 10px; text-align: center; font-size: 1.5em;'>Mail bien envoye</div>";
+            } else {
+                echo "<div class='bg-danger text-light' style='width:100%; padding-top: 10px; padding-bottom: 10px; text-align: center; font-size: 1.5em;'>Le mail ne s'est pas envoye veuillez remplir tous les champs</div>";
+            }
+        }
     ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <div id="ContactForm" class="bg-dark"></div>
     <?php
         include("footer.php");
     ?>
+    <script src="script/ContactForm.js"></script>
 </body>
 </html>

@@ -7,7 +7,8 @@ class Devis extends React.Component {
             Fname: "",
             siret: "",
             mail: "",
-            Techno: ""
+            Techno: "",
+            MSG: ""
         };
     }
 
@@ -56,7 +57,7 @@ class Devis extends React.Component {
                         />
                     </div>
                     <div className="champDevis">
-                        <label for="Techno" className="text-light">Technologie</label>
+                        <label for="Techno" className="text-light">Technologie:</label>
                         <select name="Techno" className="btn btn-light" onChange={
                             (e) => {
                                 this.setState({Techno: e.target.value});
@@ -81,6 +82,19 @@ class Devis extends React.Component {
                             <option value="Wordpress">Wordpress</option>
                             <option value="Prestashop">Prestashop</option>
                         </select>
+                    </div>
+                    <div className="champDevis">
+                        <label className="text-light" for="MSG">Votre message:</label>
+                        <textarea name="MSG" onChange={(e) => {
+                            this.setState({MSG: e.target.value});
+                            if(e.target.value != "") {
+                                document.getElementById("MSG").innerHTML=e.target.value;
+                                document.getElementById("MsgZone").style.visibility="visible";  
+                            } else {
+                                document.getElementById("MsgZone").style.visibility="hidden";
+                            }
+                        }
+                    }></textarea>
                     </div>
                     <div className="BoutonSection">
                         <input type="reset" className="btn btn-outline-danger" value="ANNULER" />

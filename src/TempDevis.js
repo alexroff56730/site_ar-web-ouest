@@ -26,6 +26,11 @@ class TempDevis extends React.Component {
                         <p className="text-light" id="Techprice"></p>
                     </div>
                 </div>
+                <div className="WidthTemp">
+                    <div className="Product bg-dark" id="MsgZone">
+                        <p className="text-light" id="MSG"></p>
+                    </div>
+                </div>
             </div>
         );
     }

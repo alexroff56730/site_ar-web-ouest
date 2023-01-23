@@ -19,7 +19,8 @@ var Devis = function (_React$Component) {
             Fname: "",
             siret: "",
             mail: "",
-            Techno: ""
+            Techno: "",
+            MSG: ""
         };
         return _this;
     }
@@ -97,7 +98,7 @@ var Devis = function (_React$Component) {
                         React.createElement(
                             "label",
                             { "for": "Techno", className: "text-light" },
-                            "Technologie"
+                            "Technologie:"
                         ),
                         React.createElement(
                             "select",
@@ -135,6 +136,24 @@ var Devis = function (_React$Component) {
                                 "Prestashop"
                             )
                         )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "champDevis" },
+                        React.createElement(
+                            "label",
+                            { className: "text-light", "for": "MSG" },
+                            "Votre message:"
+                        ),
+                        React.createElement("textarea", { name: "MSG", onChange: function onChange(e) {
+                                _this2.setState({ MSG: e.target.value });
+                                if (e.target.value != "") {
+                                    document.getElementById("MSG").innerHTML = e.target.value;
+                                    document.getElementById("MsgZone").style.visibility = "visible";
+                                } else {
+                                    document.getElementById("MsgZone").style.visibility = "hidden";
+                                }
+                            } })
                     ),
                     React.createElement(
                         "div",
