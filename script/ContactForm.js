@@ -86,7 +86,7 @@ var ContactForm = function (_React$Component) {
                     React.createElement(
                         "div",
                         null,
-                        React.createElement("input", { type: "reset", className: "btn btn-outline-danger contactBtn", value: "ANNULER" }),
+                        React.createElement("input", { type: "reset", className: "btn btn-outline-danger", value: "ANNULER" }),
                         React.createElement("input", { type: "submit", name: "sub", className: "btn btn-outline-success contactBtn", value: "ENVOYER" })
                     )
                 )

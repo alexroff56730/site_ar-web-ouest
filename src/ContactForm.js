@@ -32,7 +32,7 @@ class ContactForm extends React.Component {
                         <textarea className="bg-dark text-light" name="MSG"></textarea>
                     </div>
                     <div>
-                        <input type="reset" className="btn btn-outline-danger contactBtn" value="ANNULER" />
+                        <input type="reset" className="btn btn-outline-danger" value="ANNULER" />
                         <input type="submit" name="sub" className="btn btn-outline-success contactBtn" value="ENVOYER" />
                     </div>
                 </form>
