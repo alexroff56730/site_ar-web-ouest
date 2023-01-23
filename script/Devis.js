@@ -18,7 +18,8 @@ var Devis = function (_React$Component) {
             name: "",
             Fname: "",
             siret: "",
-            mail: ""
+            mail: "",
+            Techno: ""
         };
         return _this;
     }
@@ -39,7 +40,7 @@ var Devis = function (_React$Component) {
                         { className: "champDevis" },
                         React.createElement(
                             "label",
-                            { "for": "Name" },
+                            { "for": "Name", className: "text-light" },
                             "Nom:"
                         ),
                         React.createElement("input", { type: "text", name: "Name", onChange: function onChange(e) {
@@ -53,7 +54,7 @@ var Devis = function (_React$Component) {
                         { className: "champDevis" },
                         React.createElement(
                             "label",
-                            { "for": "Fname" },
+                            { "for": "Fname", className: "text-light" },
                             "Prenom:"
                         ),
                         React.createElement("input", { type: "text", name: "Fname", onChange: function onChange(e) {
@@ -67,7 +68,7 @@ var Devis = function (_React$Component) {
                         { className: "champDevis" },
                         React.createElement(
                             "label",
-                            { "for": "siret" },
+                            { "for": "siret", className: "text-light" },
                             "Siret:"
                         ),
                         React.createElement("input", { type: "text", name: "siret", onChange: function onChange(e) {
@@ -81,7 +82,7 @@ var Devis = function (_React$Component) {
                         { className: "champDevis" },
                         React.createElement(
                             "label",
-                            { "for": "Mail" },
+                            { "for": "Mail", className: "text-light" },
                             "Mail:"
                         ),
                         React.createElement("input", { type: "text", name: "Mail", onChange: function onChange(e) {
@@ -89,6 +90,57 @@ var Devis = function (_React$Component) {
                                 document.getElementById("mail").innerHTML = e.target.value;
                             }
                         })
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "champDevis" },
+                        React.createElement(
+                            "label",
+                            { "for": "Techno", className: "text-light" },
+                            "Technologie"
+                        ),
+                        React.createElement(
+                            "select",
+                            { name: "Techno", className: "btn btn-light", onChange: function onChange(e) {
+                                    _this2.setState({ Techno: e.target.value });
+                                    if (e.target.value == "Wordpress") {
+                                        document.getElementById("Techno").innerHTML = e.target.value;
+                                        document.getElementById("Techprice").innerHTML = "800 €";
+                                        document.getElementById("Product").style.visibility = "visible";
+                                    } else if (e.target.value == "Prestashop") {
+                                        document.getElementById("Techno").innerHTML = e.target.value;
+                                        document.getElementById("Techprice").innerHTML = "1200 €";
+                                        document.getElementById("Product").style.visibility = "visible";
+                                    } else if (e.target.value == "Choisir une Technologie") {
+                                        document.getElementById("Techno").innerHTML = "Veuillez remplir le champ technologie";
+                                        document.getElementById("Techprice").innerHTML = "0 €";
+                                        document.getElementById("Product").style.visibility = "visible";
+                                    } else {
+                                        document.getElementById("Product").style.visibility = "hidden";
+                                    }
+                                } },
+                            React.createElement(
+                                "option",
+                                { value: "Choisir une Technologie" },
+                                "Choisir une Technologie"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "Wordpress" },
+                                "Wordpress"
+                            ),
+                            React.createElement(
+                                "option",
+                                { value: "Prestashop" },
+                                "Prestashop"
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "BoutonSection" },
+                        React.createElement("input", { type: "reset", className: "btn btn-outline-danger", value: "ANNULER" }),
+                        React.createElement("input", { type: "submit", name: "sub", className: "btn btn-outline-success", value: "ENVOYER" })
                     )
                 )
             );

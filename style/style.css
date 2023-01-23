@@ -66,6 +66,21 @@ ul {
 .DispForm .champDevis input {
     border: none;
     border-radius: 10px;
+    width: 100%;
+}
+
+.DispForm .champDevis select {
+    width: 100%;
+}
+
+.DispForm .BoutonSection {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.DispForm .BoutonSection input {
+    margin-top: 10px;
 }
 
 .DispTemp {
@@ -97,4 +112,17 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.DispTemp .WidthTemp .Product {
+    display: flex !important;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    visibility: hidden;
 }

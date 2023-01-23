@@ -13,8 +13,8 @@
         include("header.php");
     ?>
     <div style="display: flex; max-width: 100%;">
-        <div id="devis" class="DispForm bg-success"></div>
-        <div id="temp" class="DispTemp bg-danger"></div>
+        <div id="devis" class="DispForm bg-dark"></div>
+        <div id="temp" class="DispTemp bg-secondary"></div>
     </div>
     
     
@@ -24,5 +24,8 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="script/Devis.js"></script>
     <script src="script/TempDevis.js"></script>
+    <?php
+        include("footer.php");
+    ?>
 </body>
 </html>

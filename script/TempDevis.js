@@ -23,38 +23,48 @@ var TempDevis = function (_React$Component) {
                 { className: "WidthTemp" },
                 React.createElement(
                     "div",
-                    { className: "HeaderTempDevis bg-primary" },
+                    { className: "HeaderTempDevis bg-dark" },
                     React.createElement(
                         "div",
                         null,
                         React.createElement(
                             "p",
-                            null,
+                            { className: "text-light" },
                             "AR-WEB-OUEST"
                         ),
                         React.createElement(
                             "p",
-                            null,
+                            { className: "text-light" },
                             "Alexandre ROFFIAEN"
                         ),
                         React.createElement(
                             "p",
-                            null,
+                            { className: "text-light" },
                             "892 736 935 000 24"
                         ),
                         React.createElement(
                             "p",
-                            null,
+                            { className: "text-light" },
                             "alexandreroffiaen@gmail.com"
                         )
                     ),
                     React.createElement(
                         "div",
                         null,
-                        React.createElement("p", { id: "name" }),
-                        React.createElement("p", { id: "Fname" }),
-                        React.createElement("p", { id: "siret" }),
-                        React.createElement("p", { id: "mail" })
+                        React.createElement("p", { className: "text-light", id: "name" }),
+                        React.createElement("p", { className: "text-light", id: "Fname" }),
+                        React.createElement("p", { className: "text-light", id: "siret" }),
+                        React.createElement("p", { className: "text-light", id: "mail" })
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "WidthTemp" },
+                    React.createElement(
+                        "div",
+                        { className: "Product bg-dark", id: "Product" },
+                        React.createElement("p", { className: "text-light", id: "Techno" }),
+                        React.createElement("p", { className: "text-light", id: "Techprice" })
                     )
                 )
             );

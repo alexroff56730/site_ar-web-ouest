@@ -6,18 +6,24 @@ class TempDevis extends React.Component {
     render() {
         return (
             <div className="WidthTemp">
-                <div className="HeaderTempDevis bg-primary">
+                <div className="HeaderTempDevis bg-dark">
                     <div>
-                        <p>AR-WEB-OUEST</p>
-                        <p>Alexandre ROFFIAEN</p>
-                        <p>892 736 935 000 24</p>
-                        <p>alexandreroffiaen@gmail.com</p>
+                        <p className="text-light">AR-WEB-OUEST</p>
+                        <p className="text-light">Alexandre ROFFIAEN</p>
+                        <p className="text-light">892 736 935 000 24</p>
+                        <p className="text-light">alexandreroffiaen@gmail.com</p>
                     </div>
                     <div>
-                        <p id="name"></p>
-                        <p id="Fname"></p>
-                        <p id="siret"></p>
-                        <p id="mail"></p>
+                        <p className="text-light" id="name"></p>
+                        <p className="text-light" id="Fname"></p>
+                        <p className="text-light" id="siret"></p>
+                        <p className="text-light" id="mail"></p>
+                    </div>
+                </div>
+                <div className="WidthTemp">
+                    <div className="Product bg-dark" id="Product">
+                        <p className="text-light" id="Techno"></p>
+                        <p className="text-light" id="Techprice"></p>
                     </div>
                 </div>
             </div>
