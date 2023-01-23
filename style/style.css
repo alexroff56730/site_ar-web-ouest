@@ -171,6 +171,7 @@ ul {
 .ContactForm .WidthContactForm .champContactForm input {
     border-radius: 5px;
     border: none; 
+    height: 30px;
 }
 
 .ContactForm .WidthContactForm .champContactForm textarea {
@@ -179,6 +180,6 @@ ul {
     height: 160px;
 }
 
-.ContactForm .WidthContactForm .champContactForm .contactBtn {
+.ContactForm .WidthContactForm div .contactBtn {
     margin-left: 10px;
 }
