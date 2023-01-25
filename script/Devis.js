@@ -56,7 +56,7 @@ var Devis = function (_React$Component) {
                         React.createElement(
                             "label",
                             { "for": "Fname", className: "text-light" },
-                            "Prenom:"
+                            "Pr\xE9nom:"
                         ),
                         React.createElement("input", { type: "text", name: "Fname", onChange: function onChange(e) {
                                 _this2.setState({ Fname: e.target.value });

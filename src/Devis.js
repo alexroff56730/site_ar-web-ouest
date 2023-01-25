@@ -27,7 +27,7 @@ class Devis extends React.Component {
                         />
                     </div>
                     <div className="champDevis">
-                        <label for="Fname" className="text-light">Prenom:</label>
+                        <label for="Fname" className="text-light">Prénom:</label>
                         <input type="text" name="Fname" onChange={
                                 (e) => {
                                     this.setState({Fname: e.target.value});
