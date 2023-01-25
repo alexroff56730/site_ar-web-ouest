@@ -12,9 +12,10 @@
     <?php
         include("header.php");
     ?>
-    
+    <div id="Index"></div>
     <?php
         include("footer.php");
     ?>
+    <script src="script/Acceuil.js"></script>
 </body>
 </html>
