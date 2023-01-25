@@ -1,5 +1,5 @@
 <header class="entete bg-light">
-    <div>
+    <div class="logoZone size-logo-menu">
         <figure style="width: 20%;">
             <a href="index.php">
                 <img src="img/cropped-Logo-Alex.png" alt="logo ar-web-ouest" style="width: 100%;">
@@ -7,11 +7,5 @@
             </a>
         </figure>
     </div>
-    <div>
-        <ul>
-            <li><a class="btn btn-outline-dark btn-perso" href="index.php">ACCUEIL</a></li>
-            <li><a class="btn btn-outline-dark btn-perso" href="devis.php">DEVIS</a></li>
-            <li><a class="btn btn-outline-dark btn-perso" href="contact.php">CONTACT</a></li>
-        </ul>
-    </div>
+    <div id="headerMenu" class="size-logo-menu"></div>
 </header>
