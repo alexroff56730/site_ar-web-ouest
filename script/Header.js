@@ -71,23 +71,18 @@ var Header = function (_React$Component) {
                         ),
                         React.createElement(
                             "a",
-                            { href: "#" },
-                            "About"
+                            { href: "index.php" },
+                            "ACCUEIL"
                         ),
                         React.createElement(
                             "a",
-                            { href: "#" },
-                            "Services"
+                            { href: "devis.php" },
+                            "DEVIS"
                         ),
                         React.createElement(
                             "a",
-                            { href: "#" },
-                            "Clients"
-                        ),
-                        React.createElement(
-                            "a",
-                            { href: "#" },
-                            "Contact"
+                            { href: "contact.php" },
+                            "CONTACT"
                         )
                     ),
                     React.createElement(
