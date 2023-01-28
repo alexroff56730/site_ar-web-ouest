@@ -32,7 +32,7 @@ var Header = function (_React$Component) {
                             null,
                             React.createElement(
                                 "a",
-                                { "class": "btn btn-outline-dark btn-perso", href: "index.php" },
+                                { className: "btn btn-outline-dark btn-perso", href: "index.php" },
                                 "ACCUEIL"
                             )
                         ),
@@ -41,7 +41,7 @@ var Header = function (_React$Component) {
                             null,
                             React.createElement(
                                 "a",
-                                { "class": "btn btn-outline-dark btn-perso", href: "devis.php" },
+                                { className: "btn btn-outline-dark btn-perso", href: "devis.php" },
                                 "DEVIS"
                             )
                         ),
@@ -50,7 +50,7 @@ var Header = function (_React$Component) {
                             null,
                             React.createElement(
                                 "a",
-                                { "class": "btn btn-outline-dark btn-perso", href: "contact.php" },
+                                { className: "btn btn-outline-dark btn-perso", href: "contact.php" },
                                 "CONTACT"
                             )
                         )

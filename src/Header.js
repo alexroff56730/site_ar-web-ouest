@@ -9,9 +9,9 @@ class Header extends React.Component {
             <div>
                 <div className="menuDesk">
                     <ul>
-                        <li><a class="btn btn-outline-dark btn-perso" href="index.php">ACCUEIL</a></li>
-                        <li><a class="btn btn-outline-dark btn-perso" href="devis.php">DEVIS</a></li>
-                        <li><a class="btn btn-outline-dark btn-perso" href="contact.php">CONTACT</a></li>
+                        <li><a className="btn btn-outline-dark btn-perso" href="index.php">ACCUEIL</a></li>
+                        <li><a className="btn btn-outline-dark btn-perso" href="devis.php">DEVIS</a></li>
+                        <li><a className="btn btn-outline-dark btn-perso" href="contact.php">CONTACT</a></li>
                     </ul>
                 </div>
                 <div className="menuResp">
