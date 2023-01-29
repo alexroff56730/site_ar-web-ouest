@@ -65,12 +65,10 @@
                 }
             }
         $email_message .= "\r\n" . "--" . $boundary . "--" . "\r\n";
+        $message_Confirm = "Bonjour,<br/> votre demande à bien été envoyé, nous étudions votre demande.<br/> Cordialement. AR-WEB-OUEST";
 
-            if(mail($to, $subject, $email_message, $headers)) {
-                echo "Mail bien envoyé <br>";
-            } else {
-                echo "Erreur mail non envoyé <br>";
-            }
+            mail($to, $subject, $email_message, $headers);
+            mail($mail_client, $subject, $message_Confirm, $headers);
         }
     }
 ?>
