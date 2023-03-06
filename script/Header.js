@@ -19,43 +19,8 @@ var Header = function (_React$Component) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "div",
+                "nav",
                 null,
-                React.createElement(
-                    "div",
-                    { className: "menuDesk" },
-                    React.createElement(
-                        "ul",
-                        null,
-                        React.createElement(
-                            "li",
-                            null,
-                            React.createElement(
-                                "a",
-                                { className: "btn btn-outline-dark btn-perso", href: "index.php" },
-                                "ACCUEIL"
-                            )
-                        ),
-                        React.createElement(
-                            "li",
-                            null,
-                            React.createElement(
-                                "a",
-                                { className: "btn btn-outline-dark btn-perso", href: "devis.php" },
-                                "DEVIS"
-                            )
-                        ),
-                        React.createElement(
-                            "li",
-                            null,
-                            React.createElement(
-                                "a",
-                                { className: "btn btn-outline-dark btn-perso", href: "contact.php" },
-                                "CONTACT"
-                            )
-                        )
-                    )
-                ),
                 React.createElement(
                     "div",
                     { className: "menuResp" },

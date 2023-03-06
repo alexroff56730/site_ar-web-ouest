@@ -47,14 +47,6 @@ ul {
     padding-left: 100px;
 }
 
-.menuDesk {
-    display: flex;
-}
-
-.menuResp {
-    display: none;
-}
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -87,16 +79,6 @@ ul {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-@media screen and (max-width: 1230px) {
-    .menuDesk {
-        display: none;
-    }
-
-    .menuResp {
-        display: flex;
-    }
 }
 
 /*Acceuil*/
