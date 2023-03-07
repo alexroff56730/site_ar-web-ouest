@@ -29,7 +29,10 @@ var Acceuil = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "InfoBox", id: "InfoBox" },
-                    "Le site est en maintenance si vous avez besoin de renseignement veillez me joindre \xE0 l'adresse mail : ",
+                    "Le site est en maintenance.",
+                    React.createElement("br", null),
+                    React.createElement("br", null),
+                    "Si vous avez besoin de renseignement, veuillez me joindre \xE0 l'adresse mail : ",
                     React.createElement(
                         "a",
                         { href: "mailto:alexandreroffiaen@gmail.com" },

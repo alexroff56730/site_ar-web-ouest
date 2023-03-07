@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 0;
     width: 1000px;
-    height: 200px;
+    height: 250px;
     top: -1000px;
     transition: top 1s ease-in-out;
     background-color: #111;
