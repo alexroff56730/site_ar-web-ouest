@@ -42,8 +42,8 @@ var Acceuil = function (_React$Component) {
                     "ou par t\xE9l\xE9phone : ",
                     React.createElement(
                         "a",
-                        { href: "tel:+33766819382" },
-                        "cliquez ici pour appeler"
+                        { href: "tel:+33766819382", className: "btn btn-outline-danger" },
+                        "cliquez ici"
                     ),
                     React.createElement("br", null),
                     React.createElement("br", null),
