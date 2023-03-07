@@ -29,7 +29,7 @@
     left: 30%;
     text-align: justify;
     padding: 30px;
-    border: 2px solid red;
+    border: 2px solid #dc3545;;
     border-radius: 10px;
     box-shadow: 20px 19px 10px #111;
 }
@@ -38,9 +38,32 @@
     top: 40% !important;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 1080px) {
     .InfoBox {
-        left: 0;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .InfoBox {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .InfoBox {
+        font-size: 0.8em;
+        height: 223px;
+        width: 593px;
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .InfoBox {
+        position: initial;
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 }
 
