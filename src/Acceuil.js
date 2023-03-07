@@ -16,7 +16,7 @@ class Acceuil extends React.Component {
                     Le site est en maintenance.<br/><br/>Si vous avez besoin de renseignements, veuillez me joindre à l'adresse mail : <a href="mailto:alexandreroffiaen@gmail.com">alexandreroffiaen@gmail.com</a>
                     <br/>
                     Ou par téléphone : <a href="tel:+33766819382">cliquez ici pour appeler</a><br/><br/>
-                    <span className="maj">merci pour votre compréhension</span>
+                    <span className="maj">merci pour votre compréhension.</span>
                 </div>
             </div>
         )

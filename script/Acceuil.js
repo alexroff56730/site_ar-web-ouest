@@ -50,7 +50,7 @@ var Acceuil = function (_React$Component) {
                     React.createElement(
                         "span",
                         { className: "maj" },
-                        "merci pour votre compr\xE9hension"
+                        "merci pour votre compr\xE9hension."
                     )
                 )
             );
