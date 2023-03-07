@@ -13,7 +13,7 @@ class Acceuil extends React.Component {
         return (
             <div className="acceuil">
                 <div className="InfoBox" id="InfoBox">
-                    Le site est en maintenance.<br/><br/>Si vous avez besoin de renseignements, veuillez me joindre à l'adresse mail : <a href="mailto:alexandreroffiaen@gmail.com" className="btn btn-outline-pimary">alexandreroffiaen@gmail.com</a>
+                    Le site est en maintenance.<br/><br/>Si vous avez besoin de renseignements, veuillez me joindre à l'adresse mail : <a href="mailto:alexandreroffiaen@gmail.com" className="btn btn-outline-primary">alexandreroffiaen@gmail.com</a>
                     <br/>
                     ou par téléphone : <a href="tel:+33766819382" className="btn btn-outline-danger">cliquez ici</a><br/><br/>
                     <span className="maj">merci pour votre compréhension.</span>
