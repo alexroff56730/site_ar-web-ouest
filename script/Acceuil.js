@@ -32,7 +32,7 @@ var Acceuil = function (_React$Component) {
                     "Le site est en maintenance.",
                     React.createElement("br", null),
                     React.createElement("br", null),
-                    "Si vous avez besoin de renseignement, veuillez me joindre \xE0 l'adresse mail : ",
+                    "Si vous avez besoin de renseignements, veuillez me joindre \xE0 l'adresse mail : ",
                     React.createElement(
                         "a",
                         { href: "mailto:alexandreroffiaen@gmail.com" },
@@ -44,6 +44,13 @@ var Acceuil = function (_React$Component) {
                         "a",
                         { href: "tel:+33766819382" },
                         "cliquez ici pour appeler"
+                    ),
+                    ".",
+                    React.createElement("br", null),
+                    React.createElement(
+                        "span",
+                        { className: "maj" },
+                        "merci pour votre compr\xE9hension"
                     )
                 )
             );
