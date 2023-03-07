@@ -39,7 +39,7 @@ var Acceuil = function (_React$Component) {
                         "alexandreroffiaen@gmail.com"
                     ),
                     React.createElement("br", null),
-                    "Ou par t\xE9l\xE9phone : ",
+                    "ou par t\xE9l\xE9phone : ",
                     React.createElement(
                         "a",
                         { href: "tel:+33766819382" },
