@@ -3,22 +3,27 @@
     padding: 0;
 }
 
-.maj {
-    text-transform: uppercase;
+.mailinfo {
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
-.center {
-    text-align: center;
+.telinfo {
+    margin-left: 10px;
+}
+
+.maj {
+    text-transform: uppercase;
 }
 
 .InfoBox {
     position: fixed;
     z-index: 0;
-    width: 1000px;
+    width: 718px;
     height: 350px;
     top: -1000px;
     transition: top 1s ease-in-out;
-    background-color: #111;
+    background-color:#111;
     color: white;
     font-size: 1.5em;
     left: 30%;
@@ -26,10 +31,17 @@
     padding: 30px;
     border: 2px solid red;
     border-radius: 10px;
+    box-shadow: 20px 19px 10px #111;
 }
 
 .InfoBox.active {
     top: 40% !important;
+}
+
+@media screen and (min-width: 400px) {
+    .InfoBox {
+        left: 0;
+    }
 }
 
 p {

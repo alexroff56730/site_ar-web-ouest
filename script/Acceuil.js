@@ -29,28 +29,34 @@ var Acceuil = function (_React$Component) {
                 React.createElement(
                     "div",
                     { className: "InfoBox", id: "InfoBox" },
-                    "Le site est en maintenance.",
-                    React.createElement("br", null),
-                    React.createElement("br", null),
-                    "Si vous avez besoin de renseignements, veuillez me joindre \xE0 l'adresse mail : ",
                     React.createElement(
-                        "a",
-                        { href: "mailto:alexandreroffiaen@gmail.com", className: "btn btn-outline-primary" },
-                        "alexandreroffiaen@gmail.com"
-                    ),
-                    React.createElement("br", null),
-                    "ou par t\xE9l\xE9phone : ",
-                    React.createElement(
-                        "a",
-                        { href: "tel:+33766819382", className: "btn btn-outline-danger center" },
-                        "cliquez ici"
-                    ),
-                    React.createElement("br", null),
-                    React.createElement("br", null),
-                    React.createElement(
-                        "span",
-                        { className: "maj" },
-                        "merci pour votre compr\xE9hension."
+                        "p",
+                        null,
+                        "Le site est en maintenance.",
+                        React.createElement("br", null),
+                        React.createElement("br", null),
+                        "Si vous avez besoin de renseignements, veuillez me joindre :",
+                        React.createElement("br", null),
+                        React.createElement("br", null),
+                        "par mail ",
+                        React.createElement(
+                            "a",
+                            { href: "mailto:alexandreroffiaen@gmail.com", className: "btn btn-outline-primary mailinfo" },
+                            "alexandreroffiaen@gmail.com"
+                        ),
+                        "ou par t\xE9l\xE9phone ",
+                        React.createElement(
+                            "a",
+                            { href: "tel:+33766819382", className: "btn btn-outline-danger telinfo" },
+                            "cliquez ici"
+                        ),
+                        React.createElement("br", null),
+                        React.createElement("br", null),
+                        React.createElement(
+                            "span",
+                            { className: "maj" },
+                            "merci pour votre compr\xE9hension."
+                        )
                     )
                 )
             );
