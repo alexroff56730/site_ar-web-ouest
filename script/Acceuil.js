@@ -18,59 +18,29 @@ var Acceuil = function (_React$Component) {
     _createClass(Acceuil, [{
         key: "render",
         value: function render() {
+
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById("InfoBox").classList.add("active");
+            });
+
             return React.createElement(
                 "div",
                 { className: "acceuil" },
                 React.createElement(
                     "div",
-                    { className: "parallax", style: { backgroundImage: "url('img/code-exemple.jpg')", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' } },
+                    { className: "InfoBox", id: "InfoBox" },
+                    "Le site est en maintenance si vous avez besoin de renseignement veillez me joindre \xE0 l'adresse mail : ",
                     React.createElement(
-                        "div",
-                        { style: { backgroundColor: "rgba(2, 0, 0, 0.5)", width: "100%", height: "700px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
-                        React.createElement(
-                            "h2",
-                            { className: "text-light" },
-                            "Un service rapide"
-                        ),
-                        React.createElement(
-                            "ul",
-                            { className: "listIcon" },
-                            React.createElement(
-                                "li",
-                                { className: "text-light", style: { width: "15%", display: "flex", flexDirection: "column", alignItems: "center" } },
-                                React.createElement("img", { src: "img/carnet.gif", style: { width: "100%" }, alt: "" }),
-                                React.createElement(
-                                    "p",
-                                    null,
-                                    "R\xE9daction du cahier des charges"
-                                )
-                            ),
-                            React.createElement(
-                                "li",
-                                { className: "text-light", style: { width: "15%", display: "flex", flexDirection: "column", alignItems: "center" } },
-                                React.createElement("img", { src: "img/la-physique.gif", style: { width: "100%" }, alt: "" }),
-                                React.createElement(
-                                    "p",
-                                    null,
-                                    "D\xE9veloppement du projet"
-                                )
-                            ),
-                            React.createElement(
-                                "li",
-                                { className: "text-light", style: { width: "15%", display: "flex", flexDirection: "column", alignItems: "center" } },
-                                React.createElement("img", { src: "img/navigateur.gif", style: { width: "100%" }, alt: "" }),
-                                React.createElement(
-                                    "p",
-                                    null,
-                                    "Mise en service"
-                                )
-                            )
-                        ),
-                        React.createElement(
-                            "a",
-                            { href: "devis.php", className: "btn btn-outline-light" },
-                            "Demander un devis"
-                        )
+                        "a",
+                        { href: "mailto:alexandreroffiaen@gmail.com" },
+                        "alexandreroffiaen@gmail.com"
+                    ),
+                    React.createElement("br", null),
+                    "Ou par t\xE9l\xE9phone : ",
+                    React.createElement(
+                        "a",
+                        { href: "tel:+33766819382" },
+                        "cliquez ici pour appeler"
                     )
                 )
             );

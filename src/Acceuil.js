@@ -5,18 +5,17 @@ class Acceuil extends React.Component {
     }
 
     render() {
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("InfoBox").classList.add("active");
+        })
+
         return (
             <div className="acceuil">
-                <div className="parallax" style={{backgroundImage: "url('img/code-exemple.jpg')", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <div style={{backgroundColor: "rgba(2, 0, 0, 0.5)", width: "100%", height: "700px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                        <h2 className="text-light">Un service rapide</h2>
-                        <ul className="listIcon">
-                            <li className="text-light" style={{width: "15%", display: "flex", flexDirection: "column", alignItems: "center"}}><img src="img/carnet.gif" style={{width: "100%"}} alt="" /><p>Rédaction du cahier des charges</p></li>
-                            <li className="text-light" style={{width: "15%", display: "flex", flexDirection: "column", alignItems: "center"}}><img src="img/la-physique.gif" style={{width: "100%"}} alt="" /><p>Développement du projet</p></li>
-                            <li className="text-light" style={{width: "15%", display: "flex", flexDirection: "column", alignItems: "center"}}><img src="img/navigateur.gif" style={{width: "100%"}} alt="" /><p>Mise en service</p></li>
-                        </ul>
-                        <a href="devis.php" className="btn btn-outline-light">Demander un devis</a>
-                    </div>
+                <div className="InfoBox" id="InfoBox">
+                    Le site est en maintenance si vous avez besoin de renseignement veillez me joindre à l'adresse mail : <a href="mailto:alexandreroffiaen@gmail.com">alexandreroffiaen@gmail.com</a>
+                    <br/>
+                    Ou par téléphone : <a href="tel:+33766819382">cliquez ici pour appeler</a>
                 </div>
             </div>
         )

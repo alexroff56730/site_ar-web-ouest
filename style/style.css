@@ -3,6 +3,27 @@
     padding: 0;
 }
 
+.InfoBox {
+    position: fixed;
+    z-index: 0;
+    width: 1000px;
+    height: 200px;
+    top: -1000px;
+    transition: top 1s ease-in-out;
+    background-color: #111;
+    color: white;
+    font-size: 1.5em;
+    left: 30%;
+    text-align: justify;
+    padding: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.InfoBox.active {
+    top: 40% !important;
+}
+
 p {
     margin: 0 !important;
 }
@@ -79,190 +100,4 @@ ul {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-/*Acceuil*/
-
-.acceuil {
-    width: 100%;
-}
-
-.parallax {
-    /* The image used */
-    /*background-image: url("img/code-exemple.jpg");*/
-  
-    /* Set a specific height */
-    min-height: 700px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.listIcon {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.listIcon p {
-    font-size: 1.5em;
-}
-
-@media screen and (max-width: 987px) {
-    .listIcon {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .listIcon p {
-        font-size: 15px;
-    }
-}
-
-
-/*DevisSection*/
-
-.DispForm {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.DispForm .champDevis {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 10px;
-}
-
-.DispForm .champDevis input,
-.DispForm .champDevis textarea {
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.DispForm .champDevis input {
-    height: 30px;
-}
-
-.DispForm .champDevis textarea {
-    height: 160px;
-}
-
-.DispForm .champDevis select {
-    width: 100%;
-}
-
-.DispForm .BoutonSection {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.DispForm .BoutonSection input {
-    margin-top: 10px;
-}
-
-.DispTemp {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 25px;
-    align-items: center;
-}
-
-.DispTemp .WidthTemp {
-    width: 100%;
-}
-
-.DispTemp .WidthTemp .HeaderTempDevis {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.DispTemp .WidthTemp .HeaderTempDevis div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.DispTemp .WidthTemp .Product {
-    display: flex !important;
-    width: 80%;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    visibility: hidden;
-}
-
-.ContactForm {
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.ContactForm .WidthContactForm {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: solid 1px black;
-    border-radius: 10px;
-    box-shadow: 20px 10px 10px black;
-}
-
-.ContactForm .WidthContactForm .champContactForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.ContactForm .WidthContactForm .champContactForm input {
-    border-radius: 5px;
-    border: none; 
-    height: 30px;
-}
-
-.ContactForm .WidthContactForm .champContactForm textarea {
-    border-radius: 5px;
-    border: none;
-    height: 160px;
-}
-
-.ContactForm .WidthContactForm div .contactBtn {
-    margin-left: 10px;
 }
