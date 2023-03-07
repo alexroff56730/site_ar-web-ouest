@@ -35,7 +35,7 @@ var Acceuil = function (_React$Component) {
                     "Si vous avez besoin de renseignements, veuillez me joindre \xE0 l'adresse mail : ",
                     React.createElement(
                         "a",
-                        { href: "mailto:alexandreroffiaen@gmail.com" },
+                        { href: "mailto:alexandreroffiaen@gmail.com", className: "btn btn-outline-pimary" },
                         "alexandreroffiaen@gmail.com"
                     ),
                     React.createElement("br", null),
