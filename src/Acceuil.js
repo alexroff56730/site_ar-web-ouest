@@ -8,6 +8,7 @@ class Acceuil extends React.Component {
         
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("InfoBox").classList.add("active");
+            document.body.style.opacity = "0.5";
         })
 
         return (
