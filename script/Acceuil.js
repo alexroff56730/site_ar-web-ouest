@@ -45,7 +45,7 @@ var Acceuil = function (_React$Component) {
                         { href: "tel:+33766819382" },
                         "cliquez ici pour appeler"
                     ),
-                    ".",
+                    React.createElement("br", null),
                     React.createElement("br", null),
                     React.createElement(
                         "span",
