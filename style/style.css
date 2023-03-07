@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.maj {
+    text-transform: uppercase;
+}
+
 .InfoBox {
     position: fixed;
     z-index: 0;
