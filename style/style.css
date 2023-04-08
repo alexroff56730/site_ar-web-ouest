@@ -100,7 +100,7 @@ ul {
     text-align: center;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2560px) {
     .entete .size-logo-menu a .logo-top-menu {
         width: 30%;
     }
