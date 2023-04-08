@@ -18,45 +18,46 @@ var Header = function (_React$Component) {
     _createClass(Header, [{
         key: "render",
         value: function render() {
+
+            var closeNav = function closeNav() {
+                document.getElementById("mySidenav").classList.remove("active");
+            };
+
+            var openNav = function openNav() {
+                document.getElementById("mySidenav").classList.add("active");
+            };
+
             return React.createElement(
                 "nav",
-                null,
+                { className: "menuResp" },
                 React.createElement(
                     "div",
-                    { className: "menuResp" },
+                    { id: "mySidenav", className: "sidenav" },
                     React.createElement(
-                        "div",
-                        { id: "mySidenav", className: "sidenav" },
-                        React.createElement(
-                            "a",
-                            { href: "javascript:void(0)", className: "closebtn", onClick: closeNav = function closeNav() {
-                                    document.getElementById("mySidenav").style.width = "0";
-                                } },
-                            "\xD7"
-                        ),
-                        React.createElement(
-                            "a",
-                            { href: "index.php" },
-                            "ACCUEIL"
-                        ),
-                        React.createElement(
-                            "a",
-                            { href: "devis.php" },
-                            "DEVIS"
-                        ),
-                        React.createElement(
-                            "a",
-                            { href: "contact.php" },
-                            "CONTACT"
-                        )
+                        "a",
+                        { href: "javascript:void(0)", className: "closebtn", onClick: closeNav },
+                        "\xD7"
                     ),
                     React.createElement(
-                        "span",
-                        { style: { fontSize: "30px", cursor: "pointer" }, onClick: openNav = function openNav() {
-                                document.getElementById("mySidenav").style.width = "250px";
-                            } },
-                        "\u2630"
+                        "a",
+                        { href: "index.php" },
+                        "ACCUEIL"
+                    ),
+                    React.createElement(
+                        "a",
+                        { href: "devis.php" },
+                        "DEVIS"
+                    ),
+                    React.createElement(
+                        "a",
+                        { href: "contact.php" },
+                        "CONTACT"
                     )
+                ),
+                React.createElement(
+                    "span",
+                    { className: "BtnTopMenu", onClick: openNav },
+                    "\u2630"
                 )
             );
         }

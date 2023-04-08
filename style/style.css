@@ -96,32 +96,50 @@ ul {
     align-items: center;
 }
 
-.entete div ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+.entete .size-logo-menu .logoLink {
+    text-align: center;
 }
 
-.entete div ul li .btn-perso {
-    width: 100px;
+@media screen and (max-width: 1920px) {
+    .entete .size-logo-menu a .logo-top-menu {
+        width: 30%;
+    }
 }
 
-.entete div ul li {
-    padding-left: 100px;
+@media screen and (max-width: 1250px) {
+    .entete .size-logo-menu a .logo-top-menu {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .entete .size-logo-menu a .logo-top-menu {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .entete .size-logo-menu a .logo-top-menu {
+        width: 100%;
+    }
 }
 
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -250px;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: left 0.5s cubic-bezier(.68,-0.55,.27,1.55);;
     padding-top: 60px;
+}
+
+.sidenav.active {
+    left: 0;
 }
 
 .sidenav a {
@@ -143,4 +161,54 @@ ul {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.BtnTopMenu {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.TitleParallax {
+    /* The image used */
+  background-image: url("../img/code-exemple.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.TitleParallax .TitleAndSlog {
+    background-color: rgba(8, 8, 8, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.TitleParallax .TitleAndSlog h1 {
+    font-size: 2.5em;
+}
+
+.TitleParallax .TitleAndSlog ul li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.TitleParallax .TitleAndSlog ul .firstSlog {
+    justify-content: center;
+       
+}
+
+.TitleParallax .TitleAndSlog ul .secondSlog {
+    justify-content: flex-end;
 }

@@ -23,12 +23,18 @@ var Acceuil = function (_React$Component) {
                 document.getElementById("InfoBox").classList.add("active");
             });
 
+            var closeBox = function closeBox() {
+                document.getElementById("InfoBox").classList.remove("active");
+                document.getElementById("InfoBox").style.display = "none";
+            };
+
             return React.createElement(
                 "div",
                 { className: "acceuil" },
                 React.createElement(
                     "div",
                     { className: "InfoBox", id: "InfoBox" },
+                    React.createElement("input", { type: "button", value: "X", className: "btn btn-danger", onClick: closeBox }),
                     React.createElement(
                         "p",
                         null,
@@ -56,6 +62,41 @@ var Acceuil = function (_React$Component) {
                             "span",
                             { className: "maj" },
                             "merci pour votre compr\xE9hension."
+                        )
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "TitleParallax" },
+                    React.createElement(
+                        "article",
+                        { className: "TitleAndSlog" },
+                        React.createElement(
+                            "h1",
+                            { className: "text-light" },
+                            "AR-WEB-OUEST D\xE9veloppeur web"
+                        ),
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                { className: "firstSlog" },
+                                React.createElement(
+                                    "span",
+                                    { className: "text-primary" },
+                                    "VOUS CONNA\xCETRE POUR"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                { className: "secondSlog" },
+                                React.createElement(
+                                    "span",
+                                    { className: "text-danger" },
+                                    "VOUS FAIRE CONNA\xCETRE\u2026"
+                                )
+                            )
                         )
                     )
                 )
