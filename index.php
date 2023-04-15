@@ -1,19 +1,8 @@
 <?php 
     require_once('Title.php'); 
     $SEO = new Title("AR-WEB-OUEST - Developpeur Web", "Développeur et concepteur de site web indépendant, réalisation de site et d'application web vitrine ou e-commerce");
+    $SEO->displayHeader();
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $SEO->getTitle(); ?></title>
-    <meta name="description" content="<?= $SEO->getDesc(); ?>">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-</head>
 <body>
     <?php
         include("header.php");
