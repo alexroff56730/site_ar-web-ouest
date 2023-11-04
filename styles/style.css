@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bgtopmenu {
+    background-color: rgb(75, 75, 75);
+}
+
+.logolinktopmenu {
+    font-size: 2.5em;
+}
+
+.logotopmenu {
+    width: auto;
+    height: 100px;
+}
+
+.linkdisp {
+    justify-content: flex-end;
+}
+
+.fonttoplink {
+    font-size: 1.5em;
+}
