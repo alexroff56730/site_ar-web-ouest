@@ -35,16 +35,16 @@ ul {
 .parallax {
     /* The image used */
     background-image: url('../img/code-exemple.jpg');
-  
+
     /* Full height */
-    height: 500px; 
-  
+    height: 500px;
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 .boxcolor1 {
     background-color: rgba(0, 0, 0, 0.8);
