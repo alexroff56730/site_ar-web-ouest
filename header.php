@@ -32,7 +32,7 @@
                         <a class="nav-link text-uppercase fonttoplink" href="contact.php">contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase fonttoplink" href="#">Disabled</a>
+                        <a class="nav-link text-uppercase fonttoplink" href="ARS/index.php">AR-Tech Service</a>
                     </li>
                 </ul>
             </div>

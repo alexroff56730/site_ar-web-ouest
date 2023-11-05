@@ -46,7 +46,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="../index.php">ar-web-ouest</a>
                     </li>
                 </ul>
             </div>
