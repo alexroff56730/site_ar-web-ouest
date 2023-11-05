@@ -4,7 +4,7 @@
 
 <div class="parallax d-flex">
     <div class="container d-flex align-items-center">
-        <article class="container col-lg-8 boxcolor1">
+        <article class="container rounded col-lg-8 boxcolor1">
             <h1 class="text-light text-left titleboxcolor1">AR-WEB-OUEST Développeur web</h1>
             <p class="text-primary text-uppercase text-center">
                 vous connaître pour
