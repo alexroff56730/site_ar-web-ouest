@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse linkdisp" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link fonttoplink" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-uppercase fonttoplink" href="index.php">Accueil<!--<span class="sr-only">(current)</span>--></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fonttoplink" href="#">Features</a>
+                        <a class="nav-link text-uppercase fonttoplink" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fonttoplink" href="#">Pricing</a>
+                        <a class="nav-link text-uppercase fonttoplink" href="contact.php">contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fonttoplink" href="#">Disabled</a>
+                        <a class="nav-link text-uppercase fonttoplink" href="#">Disabled</a>
                     </li>
                 </ul>
             </div>
