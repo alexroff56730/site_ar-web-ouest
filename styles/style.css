@@ -31,3 +31,44 @@ ul {
 .fonttoplink {
     font-size: 1.5em;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/code-exemple.jpg');
+  
+    /* Full height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.boxcolor1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .boxcolor1 {
+        font-size: 1em;
+    }
+
+    .titleboxcolor1 {
+        font-size: 1.5em;
+    }
+}
+
+.boxExp {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.NStitle {
+    font-size: 1em;
+    font-weight: bold;
+}
